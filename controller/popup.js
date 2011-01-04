@@ -50,6 +50,10 @@ var ReaderPOPUP={
         }else{
             $(document.getElementById('tabs-menu').firstChild).trigger('click');
         }
+        chrome.browserAction.setBadgeText({
+            text:""
+        });
+        window.localStorage.badgeText=0;
     },
     /**
      * open category from menu clicking.

@@ -50,6 +50,7 @@ var ReaderBG={
                         origin=JSON.parse(window.localStorage['rss-cat-'+itemId]);
                     }
                     var counter=ReaderBG.concatLists(origin, rss.items,'rss-cat-'+itemId);
+                    ReaderBG.setBadgeText(counter);
                     data.categories[itemId-1].unreaditems=counter;
                     window.localStorage.data=JSON.stringify(data);
                 });
@@ -120,6 +121,16 @@ var ReaderBG={
             notifications.shift();
             window.setTimeout("ReaderBG.runNotifications()", 1000 * 30);
         }
+    },
+    setBadgeText:function(text){
+        if(! window.localStorage.badgeText){
+            window.localStorage.badgeText=0;
+        }
+        text+=parseInt(window.localStorage.badgeText);
+        window.localStorage.badgeText=text;
+        chrome.browserAction.setBadgeText({
+            text:""+(text==0?'':text)
+        });
     }
 }
 $(function(){
