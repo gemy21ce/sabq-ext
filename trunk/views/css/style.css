@@ -1,0 +1,198 @@
+@charset "utf-8";
+/* CSS Document */
+.extention-container {
+    float:right;
+    width:570px;
+    padding:6px;
+    background:#FFF;
+    font-size:10px;
+    font-family:Tahoma, Geneva, sans-serif;
+
+}
+.extention-container a {
+    cursor:pointer;
+}
+.tab-header{
+    width:100%;
+    height:55px;
+    float:right;
+    border-bottom:0px;
+}
+
+.tab-header .logo {
+    float: right;
+    height: 52px;
+    margin-right: 7px;
+    margin-top: 3px;
+    width: 70px;
+    background:url(../images/logo.png);
+}
+.tabs {
+    float: right;
+    margin-right: 9px;
+    margin-top: 33px;
+    width: 482px;
+    border-bottom:3px solid #095287;
+}
+ul.tabs-header {
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+ul.tabs-header li {
+    position:relative;
+}
+ul.tabs-header li, ul.tabs-header li a {
+    float: right;
+    height: 18px;
+    list-style: none;
+    line-height: 18px;
+    font-size: 9pt;
+    font-weight:bold;
+    color: #FFF;
+    width: auto;
+    display:block;
+    margin-left:3px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#0673b5), to(#095186));
+    border-radius:5px 5px 0 0;
+    text-decoration:none;
+    padding:0 10px;
+    cursor: pointer;
+}
+ul.tabs-header li a {
+    padding:0 17px;
+    border:0;
+    margin-left:0;
+    text-align:right;
+    background:none;
+}
+ul.tabs-header li.current , ul.tabs-header li:hover {
+    background: -webkit-gradient(linear, left top, left bottom, from(#838689), to(#58595a));
+    color:#fff;
+}
+ul.tabs-header li.current a , ul.tabs-header li:hover a {
+    color:#fff;
+}
+.tabs-content {
+    float:right;
+    margin-top:10px;
+    width:100%;
+    height:402px;
+    overflow:auto;
+}
+.tabs-content::-webkit-scrollbar {
+    width: 16px;
+    height: 16px;
+    cursor:pointer;
+}
+.tabs-content::-webkit-scrollbar-button:start:decrement, ::-webkit-scrollbar-button:end:increment {
+    height: 30px;
+    display: block;
+    background-color: transparent;
+    display:none;
+}
+.tabs-content::-webkit-scrollbar-track-piece {
+    background-color: #fff;
+    -webkit-border-radius: 6px;
+    cursor:pointer;
+    border:1px solid #dfdfdf;
+}
+.tabs-content::-webkit-scrollbar-thumb:vertical {
+    height: 50px;
+    background-color: #095287;
+    -webkit-border-radius: 6px;
+    cursor:pointer;
+}
+.news-box {
+    float:left;
+    width:535px;
+    background:#fff;
+    border-radius:3px;
+    margin-bottom:8px;
+    padding:0 10px 10px 0;
+    position:relative;
+    z-index:50;
+    border: 1px solid #d0d0d1;
+}
+.news-box-unread{background:#eeeeee;}
+span.unread {
+    background:#a6a6a6;
+    width:10px;
+    height:10px;
+    position:absolute;
+    left:5px;
+    top:5px;
+    border-radius:5px;
+}
+.news-photo {
+    float:right;
+    width:74;
+    height:53;
+    margin:10px 0 0px 10px;
+}
+.news-photo img {
+    width:72px;
+    height:51px;
+    border:1px #4767a1 solid;
+}
+.box-news-left {
+    float:right;
+    width:423px;
+}
+.box-news-nophoto {
+    width:515px;
+}
+.box-news-title, .box-news-brief {
+    float:right;
+    width:100%;
+    margin-top:10px;
+    font-weight:bold;
+    font-size:13px;
+    color:#4c4c4c;
+    text-align:right;
+    direction:rtl;
+}
+.box-news-brief {
+    font-weight:normal;
+    font-size:11px;
+    margin-top:7px;
+}
+.box-news-title a {
+    color:#4c4c4c;
+    text-decoration:none;
+}
+.unread .box-news-title a {
+    color:#43639f;
+}
+.option {
+    float:left;
+    height:28px;
+    margin-left:8px;
+    cursor:pointer;
+    color:#fff;
+    font-weight:bold;
+    font-size:12px;
+    height:28px;
+    line-height:28px;
+}
+.option:hover {
+    color:#000;
+}
+
+
+.new-news {
+    /*	background:url(../images/new.png);*/
+    color:#fff;
+    font-size:9px;
+
+    line-height:10px;
+    padding:0 1px 2px 1px;
+    position:absolute;
+    left:-5px;
+
+    top:-8px;
+    height:10px;
+    border-radius:3px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#cc4856), to(#990414));
+    border:1px solid #990414;
+}
