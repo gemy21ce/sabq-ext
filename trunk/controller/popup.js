@@ -60,7 +60,8 @@ var ReaderPOPUP={
      */
     openCategory:function(id){
         if(!window.localStorage['rss-'+id]){
-            $("#tabs-content").html('no upcoming news now');
+            $("#tabs-content").html('<center><br/><br/><br/><br/><br/><img align="center" src="images/loading.gif"/></center>');
+            window.setTimeout("ReaderPOPUP.openCategory('"+id+"')", 1000);
             return;
         }
         var cat=JSON.parse(window.localStorage['rss-'+id]);
