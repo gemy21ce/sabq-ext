@@ -99,7 +99,7 @@ var ReaderPOPUP={
                 out+='<div class="news-photo"><img alt="" id="img-'+i+'" width="72" height="51"></img></div>';
                 out+='<div class="box-news-left">';
             }
-            out+='<div class="box-news-title"><a target="_blank" href="'+list[i].link+'">'+list[i].title+'</a></div>';
+            out+='<div class="box-news-title"><a style="cursor:pointer;" onclick="ReaderPOPUP.openURL(\''+list[i].link+'\');">'+list[i].title+'</a></div>';
             out+='<div class="box-news-brief">';
             out+=ReaderPOPUP.cutText(list[i].description, 150, "...");
             out+='</div>';
@@ -135,6 +135,12 @@ var ReaderPOPUP={
         for(i=0;i<imgs.length;i++){
             $('#img-'+imgs[i].id).attr('src',imgs[i].src);
         }
+    },
+    openURL:function(url){
+        chrome.tabs.create({
+            url:url,
+            selected:false
+        });
     }
 }
 $(function(){
