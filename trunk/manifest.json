@@ -1,7 +1,7 @@
-{
-    "name":"Sabq",
+﻿{
+    "name":"جريدة سبق الإلكترونية-Sabq Online Newspaper",
     "version": "1.1",
-    "description": "Lastest news from sabq",
+    "description": "الإضافة الرسمية لجريدة سبق الإلكترونية،تابع اخر الأخبار المحلية والعربية والعالمية",
     "background_page": "views/background.html",
    "icons":{"48": "views/images/logo.png",
               "128": "views/images/logo.png"},
@@ -10,6 +10,6 @@
          "default_title": "sabq news",
         "popup": "views/popup.html"
   },
-    "permissions": [ "tabs", "http://sabq.org/*", "http://*/*" ,"notifications"]
+    "permissions": [ "tabs", "http://sabq.org/*","notifications"]
 }
 
