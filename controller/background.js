@@ -3,12 +3,17 @@
  * and open the template in the editor.
  */
 var notifications=[];
+var currentVersion='1.1.1';
 var ReaderBG={
     /**
      * contructor
      */
     ReaderBG:function(){
         if(! window.localStorage.data){
+            window.localStorage.data=JSON.stringify(data);
+        }
+        data = JSON.parse(window.localStorage.data);
+        if(! data.varsion || data.version != currentVersion){
             window.localStorage.data=JSON.stringify(data);
         }
         ReaderBG.updateRSS();
