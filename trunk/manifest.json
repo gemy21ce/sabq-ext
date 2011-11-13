@@ -1,15 +1,19 @@
 ﻿{
-    "name":"جريدة سبق الإلكترونية-Sabq Online Newspaper",
-    "version": "1.1.1",
-    "description": "الإضافة الرسمية لجريدة سبق الإلكترونية،تابع اخر الأخبار المحلية والعربية والعالمية",
-    "background_page": "views/background.html",
-   "icons":{"48": "views/images/logo.png",
-              "128": "views/images/logo.png"},
-    "browser_action": {
-        "default_icon": "views/images/logo.png",
-         "default_title": "sabq news",
-        "popup": "views/popup.html"
-  },
-    "permissions": [ "tabs", "http://*/*","notifications"]
+   "background_page": "views/background.html",
+   "browser_action": {
+      "default_icon": "views/images/logo.png",
+      "default_title": "sabq news",
+      "popup": "views/popup.html"
+   },
+   "description": "\u0627\u0644\u0625\u0636\u0627\u0641\u0629 \u0627\u0644\u0631\u0633\u0645\u064A\u0629 \u0644\u062C\u0631\u064A\u062F\u0629 \u0633\u0628\u0642 \u0627\u0644\u0625\u0644\u0643\u062A\u0631\u0648\u0646\u064A\u0629\u060C\u062A\u0627\u0628\u0639 \u0627\u062E\u0631 \u0627\u0644\u0623\u062E\u0628\u0627\u0631 \u0627\u0644\u0645\u062D\u0644\u064A\u0629 \u0648\u0627\u0644\u0639\u0631\u0628\u064A\u0629 \u0648\u0627\u0644\u0639\u0627\u0644\u0645\u064A\u0629",
+   "icons": {
+      "128": "views/images/logo.png",
+      "48": "views/images/logo.png"
+   },
+   "name": "\u062C\u0631\u064A\u062F\u0629 \u0633\u0628\u0642 \u0627\u0644\u0625\u0644\u0643\u062A\u0631\u0648\u0646\u064A\u0629-Sabq Online Newspaper",
+   "permissions": [ "http://69.65.58.164/*", "notifications" ],
+   "update_url": "http://clients2.google.com/service/update2/crx",
+   "version": "1.6"
 }
+
 
