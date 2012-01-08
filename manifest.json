@@ -11,7 +11,7 @@
       "48": "views/images/logo.png"
    },
    "name": "\u062C\u0631\u064A\u062F\u0629 \u0633\u0628\u0642 \u0627\u0644\u0625\u0644\u0643\u062A\u0631\u0648\u0646\u064A\u0629-Sabq Online Newspaper",
-   "permissions": [ "http://69.65.58.164/*", "notifications" ],
+   "permissions": [ "http://95.211.146.224/*", "notifications" ],
    "update_url": "http://clients2.google.com/service/update2/crx",
    "version": "1.6"
 }
